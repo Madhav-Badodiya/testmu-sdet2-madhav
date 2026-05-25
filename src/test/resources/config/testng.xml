@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+<suite name="TestMu SDET-2 Full Regression Suite" verbose="1" parallel="none" thread-count="1">
+
+    <listeners>
+        <listener class-name="com.testmu.utils.RetryListener"/>
+    </listeners>
+
+    <!-- ── UI Tests ──────────────────────────────────────────────────── -->
+    <test name="UI Tests — Chrome">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="com.testmu.tests.ui.LoginTest"/>
+            <class name="com.testmu.tests.ui.DashboardTest"/>
+            <class name="com.testmu.tests.ui.FormValidationTest"/>
+        </classes>
+    </test>
+
+	<!--<test name="UI Smoke — Firefox (Cross-Browser)">
+        <parameter name="browser" value="firefox"/>
+        <classes>
+            <class name="com.testmu.tests.ui.CrossBrowserSmokeTest"/>
+        </classes>
+    </test>
+    -->
+
+	<!-- ── API Tests ─────────────────────────────────────────────────── -->
+    <test name="API Tests">
+        <classes>
+            <class name="com.testmu.tests.api.AuthApiTest"/>
+            <class name="com.testmu.tests.api.BookingCrudTest"/>
+            <class name="com.testmu.tests.api.ErrorHandlingTest"/>
+        </classes>
+    </test>
+
+	<!-- ── Integration Tests ─────────────────────────────────────────── -->
+    <test name="Integration Tests">
+        <classes>
+            <class name="com.testmu.tests.integration.BookingEndToEndTest"/>
+        </classes>
+    </test>
+
+</suite>

@@ -1,0 +1,36 @@
+{
+  "valid_users": [
+    {
+      "username": "standard_user",
+      "password": "secret_sauce",
+      "expected_title": "Swag Labs",
+      "description": "Standard user — full access"
+    },
+    {
+      "username": "problem_user",
+      "password": "secret_sauce",
+      "expected_title": "Swag Labs",
+      "description": "Problem user — known UI issues"
+    }
+  ],
+  "invalid_users": [
+    {
+      "username": "locked_out_user",
+      "password": "secret_sauce",
+      "expected_error": "Epic sadface: Sorry, this user has been locked out.",
+      "description": "Locked out user"
+    },
+    {
+      "username": "",
+      "password": "",
+      "expected_error": "Epic sadface: Username is required",
+      "description": "Empty credentials"
+    },
+    {
+      "username": "invalid_user",
+      "password": "wrong_password",
+      "expected_error": "Epic sadface: Username and password do not match any user in this service",
+      "description": "Wrong credentials"
+    }
+  ]
+}

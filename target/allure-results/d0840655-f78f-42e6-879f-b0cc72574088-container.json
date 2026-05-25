@@ -1,0 +1,1 @@
+{"uuid":"d0840655-f78f-42e6-879f-b0cc72574088","name":"com.testmu.base.BaseTest.setUp","children":["24afd3cd-c8bd-41b9-bf98-fbb6aea5e4a9"],"description":"","befores":[{"name":"setUp","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1779632647693,"stop":1779632650450}],"afters":[],"start":1779632647693,"stop":1779632650450}

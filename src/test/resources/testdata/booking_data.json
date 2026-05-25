@@ -1,0 +1,39 @@
+{
+  "bookings": [
+    {
+      "firstname": "Madhav",
+      "lastname": "Badodiya",
+      "totalprice": 200,
+      "depositpaid": true,
+      "bookingdates": {
+        "checkin": "2026-06-01",
+        "checkout": "2026-06-07"
+      },
+      "additionalneeds": "Breakfast",
+      "description": "Standard booking — full data"
+    },
+    {
+      "firstname": "TestMu",
+      "lastname": "QA",
+      "totalprice": 500,
+      "depositpaid": false,
+      "bookingdates": {
+        "checkin": "2026-07-10",
+        "checkout": "2026-07-15"
+      },
+      "additionalneeds": "Late checkout",
+      "description": "Booking with deposit unpaid"
+    }
+  ],
+  "update_payload": {
+    "firstname": "UpdatedFirst",
+    "lastname": "UpdatedLast",
+    "totalprice": 999,
+    "depositpaid": true,
+    "bookingdates": {
+      "checkin": "2026-08-01",
+      "checkout": "2026-08-05"
+    },
+    "additionalneeds": "None"
+  }
+}

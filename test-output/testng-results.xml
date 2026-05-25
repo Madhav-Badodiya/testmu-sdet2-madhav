@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="25" passed="20" failed="5" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2026-05-25T08:58:17 IST" name="TestMu SDET-2 Full Regression Suite" finished-at="2026-05-25T09:02:26 IST" duration-ms="248818">
+    <groups>
+    </groups>
+    <test started-at="2026-05-25T08:58:17 IST" name="UI Tests — Chrome" finished-at="2026-05-25T09:01:15 IST" duration-ms="177779">
+      <class name="com.testmu.tests.ui.LoginTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.testmu.tests.ui.LoginTest@45e1aa48]" started-at="2026-05-25T08:58:19 IST" name="setUp" finished-at="2026-05-25T08:58:26 IST" duration-ms="7631" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInvalidLogin(com.fasterxml.jackson.databind.JsonNode)[pri:0, instance:com.testmu.tests.ui.LoginTest@45e1aa48]" started-at="2026-05-25T08:58:27 IST" name="testInvalidLogin" description="Invalid user should see error message" data-provider="invalidUsers" finished-at="2026-05-25T08:58:30 IST" duration-ms="3367" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"username":"locked_out_user","password":"secret_sauce","expected_error":"Epic sadface: Sorry, this user has been locked out.","description":"Locked out user"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testmu.tests.ui.LoginTest@45e1aa48]" started-at="2026-05-25T08:58:30 IST" name="tearDown" finished-at="2026-05-25T08:58:31 IST" duration-ms="685" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testInvalidLogin status=SUCCESS method=LoginTest.testInvalidLogin(com.fasterxml.jackson.databind.JsonNode)[pri:0, instance:com.testmu.tests.ui.LoginTest@45e1aa48] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.testmu.tests.ui.LoginTest@45e1aa48]" started-at="2026-05-25T08:58:31 IST" name="setUp" finished-at="2026-05-25T08:58:34 IST" duration-ms="2796" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInvalidLogin(com.fasterxml.jackson.databind.JsonNode)[pri:0, instance:com.testmu.tests.ui.LoginTest@45e1aa48]" started-at="2026-05-25T08:58:34 IST" name="testInvalidLogin" description="Invalid user should see error message" data-provider="invalidUsers" finished-at="2026-05-25T08:58:36 IST" duration-ms="2016" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"username":"","password":"","expected_error":"Epic sadface: Username is required","description":"Empty credentials"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testmu.tests.ui.LoginTest@45e1aa48]" started-at="2026-05-25T08:58:36 IST" name="tearDown" finished-at="2026-05-25T08:58:36 IST" duration-ms="639" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testInvalidLogin status=SUCCESS method=LoginTest.testInvalidLogin(com.fasterxml.jackson.databind.JsonNode)[pri:0, instance:com.testmu.tests.ui.LoginTest@45e1aa48] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.testmu.tests.ui.LoginTest@45e1aa48]" started-at="2026-05-25T08:58:36 IST" name="setUp" finished-at="2026-05-25T08:58:39 IST" duration-ms="2762" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInvalidLogin(com.fasterxml.jackson.databind.JsonNode)[pri:0, instance:com.testmu.tests.ui.LoginTest@45e1aa48]" started-at="2026-05-25T08:58:39 IST" name="testInvalidLogin" description="Invalid user should see error message" data-provider="invalidUsers" finished-at="2026-05-25T08:58:42 IST" duration-ms="2680" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"username":"invalid_user","password":"wrong_password","expected_error":"Epic sadface: Username and password do not match any user in this service","description":"Wrong credentials"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testmu.tests.ui.LoginTest@45e1aa48]" started-at="2026-05-25T08:58:42 IST" name="tearDown" finished-at="2026-05-25T08:58:42 IST" duration-ms="681" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testInvalidLogin status=SUCCESS method=LoginTest.testInvalidLogin(com.fasterxml.jackson.databind.JsonNode)[pri:0, instance:com.testmu.tests.ui.LoginTest@45e1aa48] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.testmu.tests.ui.LoginTest@45e1aa48]" started-at="2026-05-25T08:58:42 IST" name="setUp" finished-at="2026-05-25T08:58:45 IST" duration-ms="2721" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLoginPageLoads()[pri:0, instance:com.testmu.tests.ui.LoginTest@45e1aa48]" started-at="2026-05-25T08:58:45 IST" name="testLoginPageLoads" description="Login page should load and have expected elements" finished-at="2026-05-25T08:58:46 IST" duration-ms="1040" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLoginPageLoads -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testmu.tests.ui.LoginTest@45e1aa48]" started-at="2026-05-25T08:58:46 IST" name="tearDown" finished-at="2026-05-25T08:58:47 IST" duration-ms="679" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLoginPageLoads status=SUCCESS method=LoginTest.testLoginPageLoads()[pri:0, instance:com.testmu.tests.ui.LoginTest@45e1aa48] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.testmu.tests.ui.LoginTest@45e1aa48]" started-at="2026-05-25T08:58:47 IST" name="setUp" finished-at="2026-05-25T08:58:50 IST" duration-ms="2839" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidLogin(com.fasterxml.jackson.databind.JsonNode)[pri:0, instance:com.testmu.tests.ui.LoginTest@45e1aa48]" started-at="2026-05-25T08:58:50 IST" name="testValidLogin" description="Valid user should reach inventory page" data-provider="validUsers" finished-at="2026-05-25T08:58:51 IST" duration-ms="1764" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"username":"standard_user","password":"secret_sauce","expected_title":"Swag Labs","description":"Standard user — full access"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testmu.tests.ui.LoginTest@45e1aa48]" started-at="2026-05-25T08:58:51 IST" name="tearDown" finished-at="2026-05-25T08:58:52 IST" duration-ms="545" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testValidLogin status=SUCCESS method=LoginTest.testValidLogin(com.fasterxml.jackson.databind.JsonNode)[pri:0, instance:com.testmu.tests.ui.LoginTest@45e1aa48] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.testmu.tests.ui.LoginTest@45e1aa48]" started-at="2026-05-25T08:58:52 IST" name="setUp" finished-at="2026-05-25T08:58:55 IST" duration-ms="2649" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidLogin(com.fasterxml.jackson.databind.JsonNode)[pri:0, instance:com.testmu.tests.ui.LoginTest@45e1aa48]" started-at="2026-05-25T08:58:55 IST" name="testValidLogin" description="Valid user should reach inventory page" data-provider="validUsers" finished-at="2026-05-25T08:58:57 IST" duration-ms="2260" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{"username":"problem_user","password":"secret_sauce","expected_title":"Swag Labs","description":"Problem user — known UI issues"}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testmu.tests.ui.LoginTest@45e1aa48]" started-at="2026-05-25T08:58:57 IST" name="tearDown" finished-at="2026-05-25T08:58:58 IST" duration-ms="656" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testValidLogin status=SUCCESS method=LoginTest.testValidLogin(com.fasterxml.jackson.databind.JsonNode)[pri:0, instance:com.testmu.tests.ui.LoginTest@45e1aa48] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testmu.tests.ui.LoginTest -->
+      <class name="com.testmu.tests.ui.FormValidationTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.testmu.tests.ui.FormValidationTest@bbf9e07]" started-at="2026-05-25T08:59:14 IST" name="setUp" finished-at="2026-05-25T08:59:17 IST" duration-ms="2710" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testEmptyFormShowsError()[pri:0, instance:com.testmu.tests.ui.FormValidationTest@bbf9e07]" started-at="2026-05-25T08:59:17 IST" name="testEmptyFormShowsError" description="Submitting empty checkout form shows required field error" finished-at="2026-05-25T08:59:51 IST" duration-ms="33512" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Error message should be displayed for empty form expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Error message should be displayed for empty form expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.testmu.tests.ui.FormValidationTest.testEmptyFormShowsError(FormValidationTest.java:46)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyFormShowsError -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testmu.tests.ui.FormValidationTest@bbf9e07]" started-at="2026-05-25T08:59:51 IST" name="tearDown" finished-at="2026-05-25T08:59:52 IST" duration-ms="1178" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testEmptyFormShowsError status=FAILURE method=FormValidationTest.testEmptyFormShowsError()[pri:0, instance:com.testmu.tests.ui.FormValidationTest@bbf9e07] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.testmu.tests.ui.FormValidationTest@bbf9e07]" started-at="2026-05-25T08:59:52 IST" name="setUp" finished-at="2026-05-25T08:59:54 IST" duration-ms="2539" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testMissingLastNameShowsError()[pri:0, instance:com.testmu.tests.ui.FormValidationTest@bbf9e07]" started-at="2026-05-25T08:59:54 IST" name="testMissingLastNameShowsError" description="Submitting form with missing last name shows error" finished-at="2026-05-25T09:00:28 IST" duration-ms="34090" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at com.testmu.tests.ui.FormValidationTest.testMissingLastNameShowsError(FormValidationTest.java:61)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMissingLastNameShowsError -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testmu.tests.ui.FormValidationTest@bbf9e07]" started-at="2026-05-25T09:00:28 IST" name="tearDown" finished-at="2026-05-25T09:00:30 IST" duration-ms="1145" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testMissingLastNameShowsError status=FAILURE method=FormValidationTest.testMissingLastNameShowsError()[pri:0, instance:com.testmu.tests.ui.FormValidationTest@bbf9e07] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.testmu.tests.ui.FormValidationTest@bbf9e07]" started-at="2026-05-25T09:00:30 IST" name="setUp" finished-at="2026-05-25T09:00:32 IST" duration-ms="2492" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testMissingPostalCodeShowsError()[pri:0, instance:com.testmu.tests.ui.FormValidationTest@bbf9e07]" started-at="2026-05-25T09:00:32 IST" name="testMissingPostalCodeShowsError" description="Submitting form with missing postal code shows error" finished-at="2026-05-25T09:01:06 IST" duration-ms="34257" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at org.testng.Assert.assertTrue(Assert.java:67)
+at com.testmu.tests.ui.FormValidationTest.testMissingPostalCodeShowsError(FormValidationTest.java:75)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMissingPostalCodeShowsError -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testmu.tests.ui.FormValidationTest@bbf9e07]" started-at="2026-05-25T09:01:06 IST" name="tearDown" finished-at="2026-05-25T09:01:08 IST" duration-ms="1328" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testMissingPostalCodeShowsError status=FAILURE method=FormValidationTest.testMissingPostalCodeShowsError()[pri:0, instance:com.testmu.tests.ui.FormValidationTest@bbf9e07] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.testmu.tests.ui.FormValidationTest@bbf9e07]" started-at="2026-05-25T09:01:08 IST" name="setUp" finished-at="2026-05-25T09:01:10 IST" duration-ms="2637" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testValidFormProceedsToOverview()[pri:0, instance:com.testmu.tests.ui.FormValidationTest@bbf9e07]" started-at="2026-05-25T09:01:10 IST" name="testValidFormProceedsToOverview" description="Valid checkout form proceeds to order overview" finished-at="2026-05-25T09:01:14 IST" duration-ms="3384" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Should navigate to checkout overview after valid form expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Should navigate to checkout overview after valid form expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.testmu.tests.ui.FormValidationTest.testValidFormProceedsToOverview(FormValidationTest.java:91)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidFormProceedsToOverview -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testmu.tests.ui.FormValidationTest@bbf9e07]" started-at="2026-05-25T09:01:14 IST" name="tearDown" finished-at="2026-05-25T09:01:15 IST" duration-ms="807" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testValidFormProceedsToOverview status=FAILURE method=FormValidationTest.testValidFormProceedsToOverview()[pri:0, instance:com.testmu.tests.ui.FormValidationTest@bbf9e07] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testmu.tests.ui.FormValidationTest -->
+      <class name="com.testmu.tests.ui.DashboardTest">
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.testmu.tests.ui.DashboardTest@295bf2a]" started-at="2026-05-25T08:58:58 IST" name="setUp" finished-at="2026-05-25T08:59:00 IST" duration-ms="2639" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testAddToCartUpdatesBadge()[pri:0, instance:com.testmu.tests.ui.DashboardTest@295bf2a]" started-at="2026-05-25T08:59:00 IST" name="testAddToCartUpdatesBadge" description="Adding product to cart updates badge count" finished-at="2026-05-25T08:59:03 IST" duration-ms="2287" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testAddToCartUpdatesBadge -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testmu.tests.ui.DashboardTest@295bf2a]" started-at="2026-05-25T08:59:03 IST" name="tearDown" finished-at="2026-05-25T08:59:03 IST" duration-ms="635" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testAddToCartUpdatesBadge status=SUCCESS method=DashboardTest.testAddToCartUpdatesBadge()[pri:0, instance:com.testmu.tests.ui.DashboardTest@295bf2a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.testmu.tests.ui.DashboardTest@295bf2a]" started-at="2026-05-25T08:59:03 IST" name="setUp" finished-at="2026-05-25T08:59:06 IST" duration-ms="2617" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testInventoryPageLoads()[pri:0, instance:com.testmu.tests.ui.DashboardTest@295bf2a]" started-at="2026-05-25T08:59:06 IST" name="testInventoryPageLoads" description="Inventory page loads with 6 products" finished-at="2026-05-25T08:59:08 IST" duration-ms="2132" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInventoryPageLoads -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testmu.tests.ui.DashboardTest@295bf2a]" started-at="2026-05-25T08:59:08 IST" name="tearDown" finished-at="2026-05-25T08:59:09 IST" duration-ms="620" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testInventoryPageLoads status=SUCCESS method=DashboardTest.testInventoryPageLoads()[pri:0, instance:com.testmu.tests.ui.DashboardTest@295bf2a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:com.testmu.tests.ui.DashboardTest@295bf2a]" started-at="2026-05-25T08:59:09 IST" name="setUp" finished-at="2026-05-25T08:59:11 IST" duration-ms="2601" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogout()[pri:0, instance:com.testmu.tests.ui.DashboardTest@295bf2a]" started-at="2026-05-25T08:59:11 IST" name="testLogout" description="User can log out from inventory page" finished-at="2026-05-25T08:59:14 IST" duration-ms="2420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogout -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.testmu.tests.ui.DashboardTest@295bf2a]" started-at="2026-05-25T08:59:14 IST" name="tearDown" finished-at="2026-05-25T08:59:14 IST" duration-ms="614" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=testLogout status=SUCCESS method=DashboardTest.testLogout()[pri:0, instance:com.testmu.tests.ui.DashboardTest@295bf2a] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.testmu.tests.ui.DashboardTest -->
+    </test> <!-- UI Tests — Chrome -->
+    <test started-at="2026-05-25T09:01:15 IST" name="API Tests" finished-at="2026-05-25T09:01:51 IST" duration-ms="36012">
+      <class name="com.testmu.tests.api.ErrorHandlingTest">
+        <test-method is-config="true" signature="setupApi()[pri:0, instance:com.testmu.tests.api.ErrorHandlingTest@17690e14]" started-at="2026-05-25T09:01:43 IST" name="setupApi" finished-at="2026-05-25T09:01:43 IST" duration-ms="3" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupApi -->
+        <test-method signature="testDeleteWithoutAuthReturns403()[pri:0, instance:com.testmu.tests.api.ErrorHandlingTest@17690e14]" started-at="2026-05-25T09:01:43 IST" name="testDeleteWithoutAuthReturns403" description="DELETE without auth token returns 403" finished-at="2026-05-25T09:01:45 IST" duration-ms="1708" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteWithoutAuthReturns403 -->
+        <test-method signature="testEmptyPayloadReturnsError()[pri:0, instance:com.testmu.tests.api.ErrorHandlingTest@17690e14]" started-at="2026-05-25T09:01:45 IST" name="testEmptyPayloadReturnsError" description="POST /booking with empty body returns error status" finished-at="2026-05-25T09:01:47 IST" duration-ms="1820" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyPayloadReturnsError -->
+        <test-method signature="testGetNonExistentBookingReturns404()[pri:0, instance:com.testmu.tests.api.ErrorHandlingTest@17690e14]" started-at="2026-05-25T09:01:47 IST" name="testGetNonExistentBookingReturns404" description="GET non-existent booking ID returns 404" finished-at="2026-05-25T09:01:49 IST" duration-ms="1836" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetNonExistentBookingReturns404 -->
+        <test-method signature="testUpdateWithoutAuthReturns403()[pri:0, instance:com.testmu.tests.api.ErrorHandlingTest@17690e14]" started-at="2026-05-25T09:01:49 IST" name="testUpdateWithoutAuthReturns403" description="PUT without auth token returns 403" finished-at="2026-05-25T09:01:51 IST" duration-ms="2036" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateWithoutAuthReturns403 -->
+      </class> <!-- com.testmu.tests.api.ErrorHandlingTest -->
+      <class name="com.testmu.tests.api.BookingCrudTest">
+        <test-method is-config="true" signature="setupApi()[pri:0, instance:com.testmu.tests.api.BookingCrudTest@7a8406c2]" started-at="2026-05-25T09:01:28 IST" name="setupApi" finished-at="2026-05-25T09:01:28 IST" duration-ms="6" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupApi -->
+        <test-method is-config="true" signature="getToken()[pri:0, instance:com.testmu.tests.api.BookingCrudTest@7a8406c2]" started-at="2026-05-25T09:01:28 IST" name="getToken" finished-at="2026-05-25T09:01:30 IST" duration-ms="1745" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getToken -->
+        <test-method signature="testGetAllBookings()[pri:1, instance:com.testmu.tests.api.BookingCrudTest@7a8406c2]" started-at="2026-05-25T09:01:30 IST" name="testGetAllBookings" description="GET /booking returns list of booking IDs" finished-at="2026-05-25T09:01:32 IST" duration-ms="2127" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetAllBookings -->
+        <test-method signature="testCreateBooking()[pri:2, instance:com.testmu.tests.api.BookingCrudTest@7a8406c2]" started-at="2026-05-25T09:01:32 IST" name="testCreateBooking" description="POST /booking creates a new booking and returns booking ID" finished-at="2026-05-25T09:01:34 IST" duration-ms="2518" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testCreateBooking -->
+        <test-method signature="testGetBookingById()[pri:3, instance:com.testmu.tests.api.BookingCrudTest@7a8406c2]" started-at="2026-05-25T09:01:34 IST" name="testGetBookingById" description="GET /booking/{id} returns correct booking with schema validation" finished-at="2026-05-25T09:01:38 IST" depends-on-methods="com.testmu.tests.api.BookingCrudTest.testCreateBooking" duration-ms="3647" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testGetBookingById -->
+        <test-method signature="testUpdateBooking()[pri:4, instance:com.testmu.tests.api.BookingCrudTest@7a8406c2]" started-at="2026-05-25T09:01:38 IST" name="testUpdateBooking" description="PUT /booking/{id} updates existing booking" finished-at="2026-05-25T09:01:40 IST" depends-on-methods="com.testmu.tests.api.BookingCrudTest.testCreateBooking" duration-ms="1741" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testUpdateBooking -->
+        <test-method signature="testDeleteBooking()[pri:5, instance:com.testmu.tests.api.BookingCrudTest@7a8406c2]" started-at="2026-05-25T09:01:40 IST" name="testDeleteBooking" description="DELETE /booking/{id} removes booking, subsequent GET returns 404" finished-at="2026-05-25T09:01:43 IST" depends-on-methods="com.testmu.tests.api.BookingCrudTest.testCreateBooking" duration-ms="3458" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDeleteBooking -->
+      </class> <!-- com.testmu.tests.api.BookingCrudTest -->
+      <class name="com.testmu.tests.api.AuthApiTest">
+        <test-method is-config="true" signature="setupApi()[pri:0, instance:com.testmu.tests.api.AuthApiTest@29138d3a]" started-at="2026-05-25T09:01:15 IST" name="setupApi" finished-at="2026-05-25T09:01:17 IST" duration-ms="2272" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupApi -->
+        <test-method signature="testInvalidCredentialsReturnError()[pri:0, instance:com.testmu.tests.api.AuthApiTest@29138d3a]" started-at="2026-05-25T09:01:17 IST" name="testInvalidCredentialsReturnError" description="Invalid credentials return bad credentials message" finished-at="2026-05-25T09:01:26 IST" duration-ms="9173" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidCredentialsReturnError -->
+        <test-method signature="testValidCredentialsReturnToken()[pri:0, instance:com.testmu.tests.api.AuthApiTest@29138d3a]" started-at="2026-05-25T09:01:26 IST" name="testValidCredentialsReturnToken" description="Valid credentials return auth token" finished-at="2026-05-25T09:01:28 IST" duration-ms="1738" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidCredentialsReturnToken -->
+      </class> <!-- com.testmu.tests.api.AuthApiTest -->
+    </test> <!-- API Tests -->
+    <test started-at="2026-05-25T09:01:51 IST" name="Integration Tests" finished-at="2026-05-25T09:02:26 IST" duration-ms="34833">
+      <class name="com.testmu.tests.integration.BookingEndToEndTest">
+        <test-method is-config="true" signature="setupApi()[pri:0, instance:com.testmu.tests.integration.BookingEndToEndTest@75961f16]" started-at="2026-05-25T09:01:51 IST" name="setupApi" finished-at="2026-05-25T09:01:51 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupApi -->
+        <test-method is-config="true" signature="initBrowser()[pri:0, instance:com.testmu.tests.integration.BookingEndToEndTest@75961f16]" started-at="2026-05-25T09:01:51 IST" name="initBrowser" finished-at="2026-05-25T09:01:53 IST" duration-ms="2679" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initBrowser -->
+        <test-method signature="testFullEndToEndFlow()[pri:0, instance:com.testmu.tests.integration.BookingEndToEndTest@75961f16]" started-at="2026-05-25T09:01:53 IST" name="testFullEndToEndFlow" description="Create booking via API, verify UI session, clean up via API" finished-at="2026-05-25T09:02:25 IST" duration-ms="31115" status="FAIL">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of element located by By.cssSelector: [data-test='shopping-cart-badge'] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\ASUS\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62548}, goog:processID: 6528, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62548/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d7a6a49d3c06fc26d52c1487ca81152]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.cssSelector: [data-test='shopping-cart-badge'] (tried for 15 second(s) with 500 milliseconds interval)
+Build info: version: '4.18.1', revision: 'b1d3319b48'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 148.0.7778.179, chrome: {chromedriverVersion: 148.0.7778.178 (d096af1c9e9..., userDataDir: C:\Users\ASUS\AppData\Local...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62548}, goog:processID: 6528, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62548/devtoo..., se:cdpVersion: 148.0.7778.179, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 8d7a6a49d3c06fc26d52c1487ca81152
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.testmu.pages.InventoryPage.addFirstItemToCart(InventoryPage.java:62)
+at com.testmu.tests.integration.BookingEndToEndTest.testFullEndToEndFlow(BookingEndToEndTest.java:109)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:228)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:961)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:201)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:819)
+at org.testng.TestRunner.run(TestRunner.java:619)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1301)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1228)
+at org.testng.TestNG.runSuites(TestNG.java:1134)
+at org.testng.TestNG.run(TestNG.java:1101)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFullEndToEndFlow -->
+        <test-method is-config="true" signature="tearDownBrowser()[pri:0, instance:com.testmu.tests.integration.BookingEndToEndTest@75961f16]" started-at="2026-05-25T09:02:25 IST" name="tearDownBrowser" finished-at="2026-05-25T09:02:26 IST" duration-ms="990" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownBrowser -->
+      </class> <!-- com.testmu.tests.integration.BookingEndToEndTest -->
+    </test> <!-- Integration Tests -->
+  </suite> <!-- TestMu SDET-2 Full Regression Suite -->
+</testng-results>
